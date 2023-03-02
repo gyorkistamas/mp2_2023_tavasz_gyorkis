@@ -3,33 +3,48 @@
     internal class Program
     {
 
-        public static void Kiir(Diak diak)
-        {
-            Console.WriteLine($"Név: {diak.nev}");
-            Console.WriteLine("Születés nap: {0}", diak.szuletesNap);
-            Console.WriteLine("Lakcím: {0}, {1}, {2}", diak.lakcim.iranyitoszam, diak.lakcim.utcaNev, diak.lakcim.hazSzam);
-            Console.WriteLine("Tagozat: {0}", diak.tagozat);
-            Console.WriteLine("Kezdés éve: {0}", diak.kezdesEve);
-        }
-
         static void Main(string[] args)
         {
-            Diak tamas = new Diak();
+            //Diak tamas = new Diak();
 
-            tamas.nev = "Györkis Tamás";
+            //tamas.nev = "Györkis Tamás";
 
-            tamas.lakcim = new Lakcim();
-            tamas.lakcim.iranyitoszam = 3000;
-            tamas.lakcim.utcaNev = "asdasdsadas utca";
-            tamas.lakcim.hazSzam = 20;
+            //tamas.lakcim = new Lakcim();
+            //tamas.lakcim.iranyitoszam = 3000;
+            //tamas.lakcim.utcaNev = "asdasdsadas utca";
+            //tamas.lakcim.hazSzam = 20;
 
-            tamas.tagozat = Tagozat.NAPPALI;
+            //tamas.tagozat = Tagozat.NAPPALI;
 
-            tamas.szuletesNap = new DateTime(2001, 4, 30);
+            //tamas.szuletesNap = new DateTime(2001, 4, 30);
 
-            tamas.kezdesEve = 2021;
+            //tamas.kezdesEve = 2021;
 
-            Kiir(tamas);
+            //tamas.Kiir();
+
+
+
+            //Diak adam = new Diak();
+
+            //adam.nev = "Teszt Ádám";
+            //adam.lakcim = new Lakcim();
+            //adam.lakcim.iranyitoszam = 3300;
+            //adam.lakcim.utcaNev = "Teszt Elek utca";
+            //adam.lakcim.hazSzam = 54;
+
+            ////adam.Kiir();
+
+
+            //Console.WriteLine(tamas);
+
+            Diak gergo = new Diak();
+
+
+            gergo.SetNev("Valami Gergő");
+
+            gergo.KezdesEve = 2020;
+
+            Console.WriteLine(gergo.KezdesEve);
 
             Console.ReadLine();
         }
