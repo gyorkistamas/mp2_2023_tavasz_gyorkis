@@ -28,6 +28,24 @@ namespace _1_Diakok
 
         private double atlag;
 
+        // Nev, tagozat, lakcim, szuletesnapot, kezdesev, de az átlagot beállítja 0
+
+        // Nev, lakcim, születesnapot, kezdesev, atlag, de a tagozat beállítja nappalira
+
+        // Nev, lakcim, tagozat, szuletesnapot, atlag bekéri, de a kezdésévét beállítja 2021
+
+
+        public Diak(string nev, Lakcim lakcim, Tagozat tagozat, DateTime szuletesNap, int kezdesEve, double atlag)
+        {
+            this.SetNev(nev);
+            this.lakcim = lakcim;
+            //....
+        }
+
+        public Diak(string nev, Lakcim lakcim, Tagozat tagozat,int ev, int honap, int nap, int kezdesEve, double atlag) : this(nev, lakcim, tagozat, new DateTime(ev, honap, nap), kezdesEve, atlag) {      }
+
+
+
 
         //1 <= átlag <= 5
 
