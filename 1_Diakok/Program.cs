@@ -5,6 +5,7 @@
 
         static void Main(string[] args)
         {
+
             //Diak tamas = new Diak();
 
             //tamas.nev = "Györkis Tamás";

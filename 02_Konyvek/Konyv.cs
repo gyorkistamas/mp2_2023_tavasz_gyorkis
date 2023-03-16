@@ -144,5 +144,17 @@ namespace _02_Konyvek
             return sr.ToString();
         }
 
+
+        public override bool Equals(object obj)
+        {
+            if (obj is Konyv)
+            {
+                Konyv masik = obj as Konyv;
+                return this.Szerzo == masik.Szerzo && this.Cim == masik.Cim;
+            }
+
+            return false;
+        }
+
     }
 }

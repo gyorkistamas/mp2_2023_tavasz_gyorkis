@@ -134,7 +134,7 @@ namespace _1_Diakok
 
             sb.Append(string.Format("Születés nap: {0}\n", szuletesNap));
             sb.Append(string.Format("Lakcím: {0}, {1}, {2}\n", lakcim.iranyitoszam, lakcim.utcaNev, lakcim.hazSzam));
-            sb.Append(string.Format("Tagozat: {0}\n", tagozat));
+            sb.Append(string.Format("Tagozat: {0}\n", TagozatFormatter.Format(tagozat)));
             sb.Append(string.Format("Kezdés éve: {0}\n", kezdesEve));
 
             return sb.ToString();

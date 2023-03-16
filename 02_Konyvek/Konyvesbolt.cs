@@ -26,15 +26,13 @@ namespace _02_Konyvek
         public void Addkonyv(string szerzo, string cim, int ar, string isbn)
         {
 
-            foreach (Konyv konyvTemp in konyvek)
+            Konyv konyv = new Konyv(szerzo, cim, ar, isbn);
+
+            if (konyvek.Contains(konyv))
             {
-                if (konyvTemp.Szerzo == szerzo && konyvTemp.Cim == cim)
-                {
-                    throw new Exception("Ez a könyv már megtalálható a könyvesboltban");
-                }
+                throw new Exception("Ez a könyv már megtalálható a könyvesboltban");
             }
 
-            Konyv konyv = new Konyv(szerzo, cim, ar, isbn);
 
             konyvek.Add(konyv);
         }
