@@ -1,0 +1,88 @@
+Égitest osztály:
+
+Mezők, propertyk:
+
+- Azonosító: Nem null, "E-" előtaggal rendelkezik, majd sorszám, 6 karakter jobbra zártan nullákkal. Az új érték nem lehet rövidebb, mint az előző. A set protected.
+- Név: Lehet null, de ha nem az, akkor legalább 2 karakter
+- Életkor: millióévekben mérjük.
+
+Konstruktorok:
+
+- Bekéri a nevet, életkort, ezeket beállítja, az id-t automatikusan növekvő értékből képzi.
+- Bekéri a nevet, az életkort  nullára állítja.
+- Semmit nem kér be, a nevet null-ra, az életkort nullára állítja.
+
+Metódusok:
+
+- ToString: Írja ki az égitest összes adatát. Kezelje le, ha valamelyik adatot nem adják meg.
+- Equals: Két égitest akkor egyezik meg, ha a nevük megegyezik.
+
+----------------------------------------------------------------------
+
+Csillag
+
+Az égitest osztályt választja ősül.
+
+Mezők, propertyk:
+
+- Csillagosztály: enum típus, lehet: NemIsmert, VorosOrias, FeherOrias, BarnaTorpe, Neutron (+ Format osztály a szép kiíratáshoz)
+
+- Átmérő: az átmérőt napátmérőben mérjük. Ha nincs megadva, akkor nem ismert.
+
+Konstruktorok:
+
+- Bekéri a nevet, életkort, osztályt, átmérőt, az azonosító végére egy "-CS" posttfix-et rak.
+- Bekéri a nevet, életkort, átmérőt, az osztályt beállítja NemIsmert-re.
+- Nem kér be semmit.
+
+Metódusok:
+
+- ToString: felhasználja az ősosztály metódusát, hozzáfűzi a csillagosztály és átmérő értékét
+
+- Kettő Csillag akkor egyezik meg, ha ugyanaz a nevük vagy az osztályuk
+
+-----------------------------------------------------------------------------------
+
+Bolygó:
+
+Az égitest-et választja ősül.
+
+Mezők, propertyk
+
+- Bolygóosztály: enum, lehet: NemIsmert, Kozet, Gaz, Foldszeru (+ format osztűly)
+- Keringésitávolság: a keringési távolság  0.37 és 30.07 között kell lennie
+
+Konstruktor
+
+- Bekéri a nevet, életkort, bolygóosztályt, keringési távolságot, az azonosító végére egy "-B" postfix-et rak
+
+- Bekéri a nevet, életkort, az osztályt nem ismertre, a keringési távolságot a minimum-ra állítja
+
+----------------------------------------------------------------------------------
+
+Univerzum
+
+Konténerosztály, égitesteket tárol
+
+Mezők:
+
+- Égitesteket tartalmazó lista
+
+Propertyk:
+
+- Összes égitestet lekérdező property
+- Csillagokat lekérdező property
+- Bolygókat lekérdező property
+- Neutroncsillagok
+- Legtávolabbi bolygó
+- Csillagtípus darabszámok
+
+Metódusok:
+
+- Adott osztályba tartozó csillagok
+- AddEgitest
+- AddCsillag
+- AddBolygo
+
+
+Indexer: azonosító alapján
