@@ -9,6 +9,9 @@ namespace Égitestek
 {
     class Univerzum
     {
+        // Ebben tároljuk az égitesteket
+        // Mivel a bolygó és a csillag osztály az Égitest osztály gyermekosztályai, így kompatibilisek vele.
+        // Ez azt jelenti, hogy mivel Egitest a listám típusa, így Csillag és Bolygó típusó objektumokat is bele tudok rakni.
         private List<Egitest> egitestek = new List<Egitest>();
 
         public void AddEgitest(string nev, int eletkor)
@@ -41,6 +44,9 @@ namespace Égitestek
             egitestek.Add(ujBolygo);
         }
 
+        // Amikor végigmegyünk a listánkon, hogy másolatot csináljunk belőle, akkor minden, a listában található elem Égitestként van kezelve, akkor is ha bolygóként vagy csillagként raktuk bele.
+        // Tehát nem férünk hozzá a bolygó és a csillag osztályban deklarált mezőkhöz, metódusokhoz.
+        // Ettől ezek nincsenek elveszve, csak vissza kell alakítanunk a Bolygó/Csillag típusúra, hogy előrjük ezeket is.
         public List<Egitest> OsszesEgitest
         {
             get
@@ -77,16 +83,24 @@ namespace Égitestek
             }
         }
 
+
+        // Csak a csillagokkal visszatérő property
         public List<Csillag> Csillagok
         {
             get
             {
                 List<Csillag> masolat = new List<Csillag>();
 
+                //Végigmegyünk a listán
                 foreach(Egitest egitest in egitestek)
                 {
+                    //Az 'is' operátor segítségével megvizsgálhatjuk, hogy az objektumunk egy bizonyos típusu-e.
+                    // Itt megnézzük a lista minden elemőrél, hogy az csillag-e. Ha igen, akkor ez igazat fog vissza adni.
                     if (egitest is Csillag)
                     {
+                        // Ha csillag, akkor átkasztolom csillag típusúvá, hogy hozzáférjek a csillag osztályban deklarált dolgokhoz.
+                        // Itt akár lehet ezt is használni, ugyanazt eredményezné:
+                        // Csillag temp = egitest as Csillag
                         Csillag temp = (Csillag)egitest;
 
                         Csillag csillagMasolat = new Csillag(temp.Nev, temp.Eletkor, temp.CsillagOsztaly, temp.Atmero);
@@ -108,6 +122,13 @@ namespace Égitestek
 
                 foreach (Egitest egitest in egitestek)
                 {
+                    //Ennél az elágazásnál azt is meg kell vizsgálni, hogy a csillag neutroncsillag-e
+                    // Ezért először megnézzük, hogy az aktuális listaelem csillag-e,
+                    // ha igen, akkor itt helyben az and után zárójelben átkasztolom Csillaggá,
+                    // és így a zárójel után egy ponttal már hozzáférek a Csillagosztályhoz
+                    // Megjegy.: a rövidzár kiértékelés miatt ha az adott elem nem csillag,
+                    // akkor a feltétel második részére nem fut rá, így ott nem keletkezhet
+                    // amiatt hiba, hogy nem csillag-ot szeretnénk azzá kasztolni.
                     if (egitest is Csillag &&
                         (egitest as Csillag).CsillagOsztaly == CsillagOsztaly.Neutron)
                     {
