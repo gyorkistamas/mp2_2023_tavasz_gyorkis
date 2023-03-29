@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_Konyvek", "02_Konyvek\02
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ruhasbolt", "Ruhasbolt\Ruhasbolt.csproj", "{EF5AB678-5DDD-4953-9B7E-AB304CCDBD12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Égitestek", "Égitestek\Égitestek.csproj", "{89D373CC-6062-40F9-BC7B-389F45549485}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Égitestek", "Égitestek\Égitestek.csproj", "{89D373CC-6062-40F9-BC7B-389F45549485}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orkok", "Orkok\Orkok.csproj", "{1C3215FC-1029-4A22-9AEC-92E95AE22EF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{89D373CC-6062-40F9-BC7B-389F45549485}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89D373CC-6062-40F9-BC7B-389F45549485}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89D373CC-6062-40F9-BC7B-389F45549485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C3215FC-1029-4A22-9AEC-92E95AE22EF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C3215FC-1029-4A22-9AEC-92E95AE22EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C3215FC-1029-4A22-9AEC-92E95AE22EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C3215FC-1029-4A22-9AEC-92E95AE22EF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
