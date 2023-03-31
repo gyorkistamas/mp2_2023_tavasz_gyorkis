@@ -4,15 +4,21 @@
     {
         static void Main(string[] args)
         {
-            Ork ork1 = new Ork(1, "Ork név");
+            Horda teszt = new Horda();
 
-            Harcos harcos1 = new Harcos(2, "Harcos ork név",
-                new Fegyver("Kard", 1.9));
+            teszt.AddOrk("Gloomcrumpa");
+            teszt.AddOrk("Gahrlblux");
+            teszt.AddOrk("Muzzlrboilah");
+            teszt.AddHarcos("Skagtoger", new Fegyver("Pöröly", 1.5));
+            teszt.AddHarcos("Klawkurska", new Fegyver("Fejsze", 2.3));
+            teszt.AddVarazslo("Harry Potter", new Varazslat("Abra Dekabra", 1.7, 0.7, 20));
+            teszt.AddVarazslo("Ron Weasly", new Varazslat("Protego", 1.1, 0.2, 30));
 
 
-            ork1.TamadAnimacio(harcos1);
+            teszt.Harc();
 
-            harcos1.TamadAnimacio(ork1);
+
+            Console.ReadLine();
 
             Console.ReadLine();
         }
