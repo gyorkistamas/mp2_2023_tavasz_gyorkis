@@ -70,6 +70,52 @@ namespace ingatlanok
 			}
 		}
 
+		public int KertTerulet
+		{
+			get
+			{
+				return (this.telekSzelesseg * this.telekHosszusag) - base.Alapterulet;
+			}
+		}
 
+        public CsaladiHaz(string helyrajziSzam, int szelesseg, int hosszusag, Allapot allapot, int telekSzelesseg, int telekHosszusag, int szintek)
+			:base(helyrajziSzam,szelesseg,hosszusag,allapot)
+        {
+			this.TelekSzelesseg = telekSzelesseg;
+			this.Telekhosszusag = telekHosszusag;
+			this.Szintek = szintek;
+        }
+
+        public CsaladiHaz(string helyrajziSzam, int szelesseg, int hosszusag, int telekSzelesseg, int telekHosszusag)
+            : this(helyrajziSzam, szelesseg, hosszusag, Allapot.Ujepitesu, telekSzelesseg, telekHosszusag, 1)
+        {
+            
+        }
+		public override int VetelAr()
+		{
+			int ar = 0;
+			switch (this.Allapot)
+			{
+				case Allapot.Ujepitesu: ar = Alapterulet * 650000;
+					break;
+				case Allapot.Korszerusitett:
+                    ar = Alapterulet * 600000;
+                    break;
+				case Allapot.Felujitott:
+                    ar = Alapterulet * 550000;
+                    break;
+				case Allapot.Felujitando:
+                    ar = Alapterulet * 400000;
+                    break;
+				default:ar = 0;
+					break;
+			}
+			ar = ar + KertTerulet * 200000;
+            return ar;
+		}
+        public override string ToString()
+        {
+            return base.ToString()+ telekHosszusag + telekSzelesseg + szintek + KertTerulet ;
+        }
     }
 }

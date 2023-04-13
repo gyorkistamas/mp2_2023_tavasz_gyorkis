@@ -109,7 +109,7 @@ namespace ingatlanok
 			: this(helyrajziSzam, szelesseg, hossz, Allapot.Ujepitesu)
 		{ }
 
-		public int Vetelar()
+		public virtual int VetelAr()
 		{
 			switch (Allapot)
 			{
@@ -134,7 +134,7 @@ namespace ingatlanok
 				this.GetHosszusag(),
 				this.Allapot,
 				this.Alapterulet,
-				this.Vetelar());
+				this.VetelAr());
         }
         public override bool Equals(object obj)
         {
