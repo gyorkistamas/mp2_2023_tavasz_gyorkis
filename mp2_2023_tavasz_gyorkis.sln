@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1_Diakok", "1_Diakok\1_Diakok.csproj", "{84E4CD4E-691F-4A8C-A3EA-49D66136201C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Diakok", "1_Diakok\01_Diakok.csproj", "{84E4CD4E-691F-4A8C-A3EA-49D66136201C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_Konyvek", "02_Konyvek\02_Konyvek.csproj", "{B94759CC-97B2-4DC7-B0EE-99ECA9E249BC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ruhasbolt", "Ruhasbolt\Ruhasbolt.csproj", "{EF5AB678-5DDD-4953-9B7E-AB304CCDBD12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_Ruhasbolt", "Ruhasbolt\03_Ruhasbolt.csproj", "{EF5AB678-5DDD-4953-9B7E-AB304CCDBD12}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Égitestek", "Égitestek\Égitestek.csproj", "{89D373CC-6062-40F9-BC7B-389F45549485}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_Égitestek", "Égitestek\04_Égitestek.csproj", "{89D373CC-6062-40F9-BC7B-389F45549485}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orkok", "Orkok\Orkok.csproj", "{1C3215FC-1029-4A22-9AEC-92E95AE22EF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_Orkok", "Orkok\05_Orkok.csproj", "{1C3215FC-1029-4A22-9AEC-92E95AE22EF2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "zh_gyak_kivetelkezeles", "zh_gyak_kivetelkezeles\zh_gyak_kivetelkezeles.csproj", "{E5AF98BA-83F7-424C-882D-89037F7633F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_zh_gyak_kivetelkezeles", "zh_gyak_kivetelkezeles\06_zh_gyak_kivetelkezeles.csproj", "{E5AF98BA-83F7-424C-882D-89037F7633F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ingatlanok", "ingatlanok\ingatlanok.csproj", "{796489C2-E12B-4025-8D3C-E4337DA9A6AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_ingatlanok", "ingatlanok\07_ingatlanok.csproj", "{796489C2-E12B-4025-8D3C-E4337DA9A6AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
