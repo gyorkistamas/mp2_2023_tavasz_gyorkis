@@ -46,54 +46,70 @@
 
             libri.Addkonyv("J. K. Rowling", "Harry Potter és a bölcsek köve", 4500, "I-45454564543-1");
 
-            foreach (Konyv konyv in libri.OsszesKonyv)
+            //foreach (Konyv konyv in libri.OsszesKonyv)
+            //{
+            //    Console.WriteLine(konyv);
+            //}
+
+
+            //libri.OsszesKonyv.Add(new Konyv("teszt", "teszt"));
+
+            //Console.WriteLine("-----------------------");
+
+            //libri.OsszesKonyv[0].Ar = 4000;
+
+            //foreach (Konyv konyv in libri.OsszesKonyv)
+            //{
+            //    Console.WriteLine(konyv);
+            //}
+
+
+            //Console.WriteLine("-----------------------");
+
+            //libri.RemoveKonyv("J. K. Rowling", "Harry Potter és a bölcsek köve");
+
+            //foreach (Konyv konyv in libri.OsszesKonyv)
+            //{
+            //    Console.WriteLine(konyv);
+            //}
+
+            //Console.WriteLine("------------------");
+            //Console.WriteLine("Robert C. Martin könyvei:");
+
+            //foreach(Konyv konyv in libri.AdottSzerzojuKonyvek("Robert C. Martin"))
+            //{
+            //    Console.WriteLine(konyv);
+            //}
+
+
+            //Console.WriteLine("------------------");
+            //Console.WriteLine("Legdrágább könyv:\n{0}", libri.LegdragabbKonyv);
+
+            //Console.WriteLine("------------------");
+
+            //Console.WriteLine("Listában az első könyv: ");
+            //Console.WriteLine(libri[0]);
+
+            //Console.WriteLine("------------------");
+
+            //Console.WriteLine("Martinnak Tiszta kód könyve: ");
+            //Console.WriteLine(libri["Robert C. Martin", "Tiszta kód"]);
+
+            //List<int> szamok = new List<int>();
+            //szamok.Add(10);
+            //szamok.Add(20);
+            //szamok.Add(30);
+            //szamok.Add(40);
+
+            //foreach (int i in szamok)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            foreach (Konyv konyv in libri)
             {
                 Console.WriteLine(konyv);
             }
-
-
-            libri.OsszesKonyv.Add(new Konyv("teszt", "teszt"));
-
-            Console.WriteLine("-----------------------");
-
-            libri.OsszesKonyv[0].Ar = 4000;
-
-            foreach (Konyv konyv in libri.OsszesKonyv)
-            {
-                Console.WriteLine(konyv);
-            }
-
-
-            Console.WriteLine("-----------------------");
-
-            libri.RemoveKonyv("J. K. Rowling", "Harry Potter és a bölcsek köve");
-
-            foreach (Konyv konyv in libri.OsszesKonyv)
-            {
-                Console.WriteLine(konyv);
-            }
-
-            Console.WriteLine("------------------");
-            Console.WriteLine("Robert C. Martin könyvei:");
-
-            foreach(Konyv konyv in libri.AdottSzerzojuKonyvek("Robert C. Martin"))
-            {
-                Console.WriteLine(konyv);
-            }
-
-
-            Console.WriteLine("------------------");
-            Console.WriteLine("Legdrágább könyv:\n{0}", libri.LegdragabbKonyv);
-
-            Console.WriteLine("------------------");
-
-            Console.WriteLine("Listában az első könyv: ");
-            Console.WriteLine(libri[0]);
-
-            Console.WriteLine("------------------");
-
-            Console.WriteLine("Martinnak Tiszta kód könyve: ");
-            Console.WriteLine(libri["Robert C. Martin", "Tiszta kód"]);
 
             Console.ReadLine();
 

@@ -1,5 +1,6 @@
 ﻿using Microsoft.Win32.SafeHandles;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace _02_Konyvek
 {
-    class Konyvesbolt
+    class Konyvesbolt : IEnumerable
     {
         private List<Konyv> konyvek;
 
@@ -45,9 +46,7 @@ namespace _02_Konyvek
 
                 foreach (Konyv konyv in konyvek)
                 {
-                    Konyv konyvMasolat = new Konyv(konyv.Szerzo, konyv.Cim, konyv.Ar, konyv.Isbn);
-
-                    masolat.Add(konyvMasolat);
+                    masolat.Add(konyv.Clone() as Konyv);
                 }
 
                 return masolat;
@@ -74,13 +73,19 @@ namespace _02_Konyvek
             {
                 if (konyv.Szerzo == szerzo)
                 {
-                    Konyv konyvMasolat = new Konyv(konyv.Szerzo, konyv.Cim, konyv.Ar, konyv.Isbn);
-
-                    masolat.Add(konyvMasolat);
+                    masolat.Add(konyv.Clone() as Konyv);
                 }
             }
 
             return masolat;
+        }
+
+        public IEnumerator GetEnumerator()
+        {
+            for (int i = 0; i < konyvek.Count; i++)
+            {
+                yield return konyvek[i].Clone() as Konyv;
+            }
         }
 
         public Konyv LegdragabbKonyv
@@ -102,7 +107,7 @@ namespace _02_Konyvek
                     }
                 }
 
-                return new Konyv(legdragabb.Szerzo, legdragabb.Cim, legdragabb.Ar, legdragabb.Isbn);
+                return legdragabb.Clone() as Konyv;
 
             }
         }
@@ -116,7 +121,7 @@ namespace _02_Konyvek
                     throw new IndexOutOfRangeException();
                 }
 
-                return new Konyv(konyvek[index].Szerzo, konyvek[index].Cim, konyvek[index].Ar, konyvek[index].Isbn);
+                return konyvek[index].Clone() as Konyv;
             }
         }
 
@@ -140,7 +145,7 @@ namespace _02_Konyvek
                     throw new Exception("Nincs ilyen szerzőjű és című könyv a könyvesboltban!");
                 }
 
-                return new Konyv(masolat.Szerzo, masolat.Cim, masolat.Ar, masolat.Isbn);
+                return masolat.Clone() as Konyv;
             }
         }
 
@@ -165,7 +170,7 @@ namespace _02_Konyvek
                     throw new Exception("Nincs ilyen szerzőjű és című könyv a könyvesboltban!");
                 }
 
-                return new Konyv(masolat.Szerzo, masolat.Cim, masolat.Ar, masolat.Isbn);
+                return masolat.Clone() as Konyv;
             }
         }
     }

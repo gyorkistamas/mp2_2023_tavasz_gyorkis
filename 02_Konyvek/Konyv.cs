@@ -16,7 +16,7 @@ namespace _02_Konyvek
      *
      */
 
-    class Konyv
+    class Konyv : ICloneable
     {
         private int id;
         private string szerzo;
@@ -33,10 +33,15 @@ namespace _02_Konyvek
         /// <param name="cim">A könyv címe</param>
         /// <param name="ar">A könyv ára</param>
         /// <param name="isbn">A könyv ISBN száma</param>
-        public Konyv(string szerzo, string cim, int ar, string isbn) 
+        public Konyv(string szerzo, string cim, int ar, string isbn)
+            : this(ID++, szerzo, cim, ar, isbn)
         {
-            this.Id = ID;
-            ID++;
+
+        }
+
+        private Konyv(int id, string szerzo, string cim, int ar, string isbn)
+        {
+            this.Id = id;
             this.Szerzo = szerzo;
             this.Cim = cim;
             this.Ar = ar;
@@ -156,5 +161,11 @@ namespace _02_Konyvek
             return false;
         }
 
+        public object Clone()
+        {
+            Konyv clone = new Konyv(this.Id, this.Szerzo, this.cim, this.Ar, this.Isbn);
+
+            return clone;
+        }
     }
 }

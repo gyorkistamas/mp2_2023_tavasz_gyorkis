@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_zh_gyak_kivetelkezeles",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_ingatlanok", "ingatlanok\07_ingatlanok.csproj", "{796489C2-E12B-4025-8D3C-E4337DA9A6AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_AbstractOrkok", "08_AbstractOrkok\08_AbstractOrkok.csproj", "{A1B7D2B5-175F-424A-81E4-744BED028AB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_AbstractOrkok", "08_AbstractOrkok\08_AbstractOrkok.csproj", "{A1B7D2B5-175F-424A-81E4-744BED028AB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_Kave", "09_Kave\09_Kave.csproj", "{F79461CE-57C8-48B0-A0FB-6BA5E261B71C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_Kave", "09_Kave\09_Kave.csproj", "{F79461CE-57C8-48B0-A0FB-6BA5E261B71C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_InterfaceAlapok", "10_InterfaceAlapok\10_InterfaceAlapok.csproj", "{BDB593AD-238A-4FE0-A487-7E57508BDF2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{F79461CE-57C8-48B0-A0FB-6BA5E261B71C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F79461CE-57C8-48B0-A0FB-6BA5E261B71C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F79461CE-57C8-48B0-A0FB-6BA5E261B71C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDB593AD-238A-4FE0-A487-7E57508BDF2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDB593AD-238A-4FE0-A487-7E57508BDF2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDB593AD-238A-4FE0-A487-7E57508BDF2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDB593AD-238A-4FE0-A487-7E57508BDF2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
