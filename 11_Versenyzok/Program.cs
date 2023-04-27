@@ -20,7 +20,7 @@ namespace _11_Versenyzok
 
             foreach (Versenyzo versenyzo in kontener.Versenyzok)
             {
-                Console.WriteLine(versenyzo.KorIdo);
+                Console.WriteLine(versenyzo.GetMilliSeconds());
             }
 
 
