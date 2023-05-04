@@ -27,9 +27,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11_Versenyzok", "11_Verseny
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12_VersenyzoDLL2", "12_VersenyzoDLL2\12_VersenyzoDLL2.csproj", "{DFC57CF7-DC63-4ED6-A7C8-D0EBDFB90B65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13_BovitoMetodusok", "13_BovitoMetodusok\13_BovitoMetodusok.csproj", "{D2C6FBE4-CF57-4830-8A4A-1EF780D10550}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13_BovitoMetodusok", "13_BovitoMetodusok\13_BovitoMetodusok.csproj", "{D2C6FBE4-CF57-4830-8A4A-1EF780D10550}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_DiakokLinq", "14_DiakokLinq\14_DiakokLinq.csproj", "{911EFDD1-04FB-46A2-AC4E-07B9C92C2ADB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14_DiakokLinq", "14_DiakokLinq\14_DiakokLinq.csproj", "{911EFDD1-04FB-46A2-AC4E-07B9C92C2ADB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15_DiakokLinq2", "15_DiakokLinq2\15_DiakokLinq2.csproj", "{514EC56E-6F22-42E7-81CC-70B08B697EFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{911EFDD1-04FB-46A2-AC4E-07B9C92C2ADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{911EFDD1-04FB-46A2-AC4E-07B9C92C2ADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{911EFDD1-04FB-46A2-AC4E-07B9C92C2ADB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{514EC56E-6F22-42E7-81CC-70B08B697EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{514EC56E-6F22-42E7-81CC-70B08B697EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{514EC56E-6F22-42E7-81CC-70B08B697EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{514EC56E-6F22-42E7-81CC-70B08B697EFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

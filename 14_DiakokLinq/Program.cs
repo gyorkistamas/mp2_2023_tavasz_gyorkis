@@ -111,17 +111,17 @@ namespace _14_DiakokLinq
                 Console.WriteLine(diak);
             }
 
-            //Console.WriteLine("-----------------------");
+            Console.WriteLine("-----------------------");
 
-            //Console.WriteLine("Város szerint csoportosítva a diákok:");
+            Console.WriteLine("Város szerint csoportosítva a diákok:");
 
-            //var varosSzerintCsoportositva = diakok
-            //    .GroupBy(diak => diak.lakcim).ToList();
+            var varosSzerintCsoportositva = diakok
+                .OrderBy(diak => diak.lakcim);
 
-            //foreach (var diak in varosSzerintCsoportositva)
-            //{
-            //    Console.WriteLine(diak);
-            //}
+            foreach (var diak in varosSzerintCsoportositva)
+            {
+                Console.WriteLine(diak);
+            }
 
             // 2022-ben kezdett diákok
 
