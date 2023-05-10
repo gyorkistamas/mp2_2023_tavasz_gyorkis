@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13_BovitoMetodusok", "13_Bo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14_DiakokLinq", "14_DiakokLinq\14_DiakokLinq.csproj", "{911EFDD1-04FB-46A2-AC4E-07B9C92C2ADB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15_DiakokLinq2", "15_DiakokLinq2\15_DiakokLinq2.csproj", "{514EC56E-6F22-42E7-81CC-70B08B697EFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "15_DiakokLinq2", "15_DiakokLinq2\15_DiakokLinq2.csproj", "{514EC56E-6F22-42E7-81CC-70B08B697EFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16-Generikusok", "16-Generikusok\16-Generikusok.csproj", "{B8A1E973-4F70-479B-8DA0-6C7985EEAF20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{514EC56E-6F22-42E7-81CC-70B08B697EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{514EC56E-6F22-42E7-81CC-70B08B697EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{514EC56E-6F22-42E7-81CC-70B08B697EFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8A1E973-4F70-479B-8DA0-6C7985EEAF20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8A1E973-4F70-479B-8DA0-6C7985EEAF20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8A1E973-4F70-479B-8DA0-6C7985EEAF20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8A1E973-4F70-479B-8DA0-6C7985EEAF20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
