@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _18_zh2_gyak_dll
 {
-    internal class Homero : Szenzor, IHomero
+    public class Homero : Szenzor, IHomero
     {
         bool aktiv = false;
         public void HatarokatBeallit(int alsoHatar, int felsoHatar)
@@ -55,9 +55,9 @@ namespace _18_zh2_gyak_dll
         {
             return aktiv;
         }
-        public void SetAktiv()
+        public void SetAktiv(bool x)
         {
-            aktiv = true;
+            aktiv = x;
         }
 
         public override void Adatkuldes()
@@ -70,12 +70,19 @@ namespace _18_zh2_gyak_dll
 
         public override object Clone()
         {
-
+            Homero masolat = new Homero(Pozicio.x, Pozicio.y,AlsoHatar, FelsoHatar);
+            return masolat;
+            
         }
         public Homero(int x, int y, int alsohatar, int felsohatar) : base(new Pozicio(x, y))
         {
             HatarokatBeallit(alsohatar, felsohatar);
-            SetAktiv();
+            SetAktiv(true);
+        }
+        public override string ToString()
+        {
+            return string.Format("Hőmérő: {0}, A:{1} - F{2}",
+                base.ToString(), AlsoHatar, FelsoHatar);
         }
     }
 }

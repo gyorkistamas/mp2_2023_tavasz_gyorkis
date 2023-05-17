@@ -8,4 +8,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\18-zh2_gyak_dll\18-zh2_gyak_dll.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="szenzorok.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

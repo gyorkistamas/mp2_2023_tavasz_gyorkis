@@ -22,10 +22,9 @@ namespace _18_zh2_gyak_dll
 
         public override string ToString()
         {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("Pozicio: x: {0} y: {1}\n ", Pozicio.x, Pozicio.y);
-            sb.AppendFormat("Aktiv: {0} ", Aktiv);
-            return sb.ToString();
+            return string.Format("{0} ({1}; {2})",
+                Aktiv ? "On" : "Off",
+                Pozicio.x, Pozicio.y);
         }
 
     }

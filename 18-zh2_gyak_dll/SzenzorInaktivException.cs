@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _18_zh2_gyak_dll
 {
-    internal class SzenzorInaktivException : Exception
+    public class SzenzorInaktivException : Exception
     {
     }
 }
