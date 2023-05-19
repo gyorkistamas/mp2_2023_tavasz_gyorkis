@@ -49,7 +49,13 @@ namespace _18_zh2_gyak_dll
             private set;
         }
 
-        public override bool Aktiv => throw new NotImplementedException();
+        public override bool Aktiv
+        {
+            get
+            {
+                return aktiv;
+            }
+        }
 
         public bool GetAktiv()
         {

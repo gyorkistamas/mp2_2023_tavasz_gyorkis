@@ -28,7 +28,7 @@ namespace _18_zh2_gyak_dll
             get
             {
                 List<Szenzor> szenzorVissza = szenzorok
-                    .Where(szenzor => szenzor.Aktiv == true)
+                    .Where(szenzor => szenzor.Aktiv)
                     .OrderBy(szenzor => szenzor.Pozicio.x)
                     .ThenByDescending(szenzor => szenzor.Pozicio.y)
                     .Select(szenzor => szenzor.Clone() as Szenzor)
